@@ -3414,7 +3414,8 @@ namespace NpgsqlTypes
 					}
 					catch
 					{
-						throw new InvalidCastException();
+						//throw new InvalidCastException();
+						return DateTime.MinValue;
 					}
 			}
 		}
@@ -3454,7 +3455,8 @@ namespace NpgsqlTypes
                     }
                     catch
                     {
-                        throw new InvalidCastException();
+                        //throw new InvalidCastException();
+						return DateTime.MinValue;
                     }
             }
         }
